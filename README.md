@@ -29,9 +29,6 @@ Install with pip
 ```
 pip install .
 
-or
-
-pip install git+https://github.com/Tj-Barrett/pothos
 ```
 
 pothos reads lammps dump files in the form
