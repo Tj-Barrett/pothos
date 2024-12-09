@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pothos"
+version = "0.0.3"
+authors = [
+  { name="Thomas Joseph Barrett", email="barrett.t@northeastern.edu" },
+]
+description = "pothos : A Python package for polymer chain orientation and microstructure evolution monitoring"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies= ['numba',
+               'numpy',
+               'scipy',
+               'scikit-learn',
+               'rich']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Tj-Barrett/pothos"
+Issues = "https://github.com/Tj-Barrett/pothos/issues"
+
+# [tool.setuptools]
+# ext-modules = [
+#     {
+#         name = "pothos.align",
+#         sources = ["./src/pothos/align.c"]
+#     },
+# ]
