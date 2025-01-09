@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 #include "legendre.h"
 #include "verho.h"
 
