@@ -341,7 +341,7 @@ class align(object):
         except:
             from scipy.signal.windows import hann, tukey, parzen, nuttall
         finally:
-            print('Scipy seems to have changed things, try an older version (1.16.1 should be ok)
+            print('Scipy seems to have changed things, try an older version (1.16.1 should be ok')
             exit()
 
         #
