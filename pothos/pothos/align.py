@@ -2452,6 +2452,10 @@ class align(object):
             elif not self.series:
                 self.polymers, self.monomers = self.data_parse(self.filename, self.series)
 
+            else:
+                print('Data parse failed')
+                exit()
+
             #########################################
             # Application of Alignment Functions / Order Parameters
             #########################################
