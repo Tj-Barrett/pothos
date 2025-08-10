@@ -340,9 +340,6 @@ class align(object):
             from scipy.signal import hann, tukey, parzen, nuttall
         except:
             from scipy.signal.windows import hann, tukey, parzen, nuttall
-        finally:
-            print('Scipy seems to have changed things, try an older version (1.16.1 should be ok')
-            exit()
 
         #
         # Segment Averaging - averages across crystalline chain segments
