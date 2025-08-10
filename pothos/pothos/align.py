@@ -336,7 +336,13 @@ class align(object):
         self.chain_averaged = average chord vector for atoms, zeroed (0,0,0) for amorphous
         '''
         from numpy import sqrt, array, sum, zeros
-        from scipy.signal import hann, tukey, parzen, nuttall
+        try:
+            from scipy.signal import hann, tukey, parzen, nuttall
+        except:
+            from scipy.signal.windows import hann, tukey, parzen, nuttall
+        finally:
+            print('Scipy seems to have changed things, try an older version (1.16.1 should be ok)
+            exit()
 
         #
         # Segment Averaging - averages across crystalline chain segments
