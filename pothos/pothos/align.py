@@ -2453,7 +2453,7 @@ class align(object):
                 self.polymers, self.monomers = self.data_parse(self.filename, self.series)
 
             else:
-                print('Data parse failed')
+                print('Data parse failed. Is this a data series or a single timestep?')
                 exit()
 
             #########################################
